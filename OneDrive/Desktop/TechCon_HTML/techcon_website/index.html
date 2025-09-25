@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>TechCon 2025 - Homepage</title>
+  </head>
+  <body>
+    <header>
+      <h1>TechCon 2025</h1>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="introduction" aria-labelledby="intro-heading">
+        <h2 id="intro-heading">Introduction</h2>
+        <p>
+          TechCon 2025 brings together industry leaders, researchers, and
+          developers to discuss the latest innovations in technology, AI, and
+          cloud computing. Join us for two days of talks, workshops, and
+          networking.
+        </p>
+
+        <figure>
+          <!-- Video: external sample video; controls enabled -->
+          <video controls width="640" aria-describedby="video-desc">
+            <source
+              src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+              type="video/mp4"
+            />
+            <!-- Captions track (local file) -->
+            <track
+              kind="subtitles"
+              srclang="en"
+              label="English"
+              src="subtitles_en.vtt"
+              default
+            />
+            <!-- Fallback text if video isn't supported -->
+            Your browser does not support the video element. You can
+            <a
+              href="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+              target="_blank"
+              rel="noopener noreferrer"
+              >download the video</a
+            >.
+          </video>
+          <figcaption id="video-desc">
+            Promo video: short introduction to TechCon 2025.
+          </figcaption>
+        </figure>
+      </section>
+    </main>
+  </body>
+
+  <footer>
+    <p>copyright 2025 TechCon. All rights reserved.</p>
+  </footer>
+</body>
+</html>
