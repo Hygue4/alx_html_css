@@ -1,0 +1,96 @@
+/* base.css — baseline styles for all pages (leave this file identical) */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue',
+    Arial;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  background-color: #f7f8fa;
+  color: #111827;
+  padding: 24px;
+}
+
+/* Simple layout */
+header,
+main,
+footer {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* header nav list */
+header ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px 0;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+header a {
+  text-decoration: none;
+  color: #0f172a;
+  font-weight: 600;
+}
+
+/* Make images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* main article spacing */
+article {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(16, 24, 40, 0.04);
+  margin-bottom: 16px;
+}
+
+/* aside style */
+aside p {
+  font-style: italic;
+  color: #6b7280;
+  text-align: center;
+}
+
+/* footer single-line style */
+footer p {
+  text-align: center;
+  color: #6b7280;
+  margin: 20px 0 0 0;
+}
+
+/* basic table style if used */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #e6e9ef;
+}
+
+caption {
+  caption-side: top;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
