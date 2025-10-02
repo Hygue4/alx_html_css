@@ -42,3 +42,64 @@ footer {
   border-top: 1px solid #dee2e6;
   margin-top: auto; /* Push footer to bottom */
 }
+/* Responsive Design for Smartphones */
+@media (max-width: 768px) {
+  /* Change main layout to column on mobile */
+  main {
+    flex-direction: column;
+  }
+
+  /* Make both article and aside take full width on mobile */
+  article,
+  aside {
+    flex: 1;
+    width: 100%;
+  }
+
+  /* Adjust padding for smaller screens */
+  article,
+  aside {
+    padding: 15px;
+  }
+
+  header,
+  footer {
+    padding: 1rem;
+  }
+
+  /* Improve navigation for touch devices */
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+/* Additional mobile optimizations for the works_on_smartphone class */
+body.works_on_smartphone {
+  /* Ensure proper text sizing on mobile */
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Extra small devices (phones under 480px) */
+@media (max-width: 480px) {
+  /* Further reduce padding on very small screens */
+  article,
+  aside {
+    padding: 10px;
+  }
+
+  /* Adjust font sizes for better readability */
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  /* Make images responsive */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
