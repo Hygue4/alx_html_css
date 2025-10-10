@@ -1,0 +1,248 @@
+/* styles.css - Custom Styling Assignment */
+
+/* === Logo Styling === */
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ff6b6b;
+  margin-right: 1rem;
+}
+
+/* === Header Customization === */
+header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+header a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+/* === Article Custom Styling === */
+article {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #667eea;
+}
+
+article h1 {
+  color: #2c3e50;
+  border-bottom: 3px solid #ff6b6b;
+  padding-bottom: 0.5rem;
+}
+
+article h2 {
+  color: #3498db;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(52, 152, 219, 0.1),
+    transparent
+  );
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+article h3 {
+  color: #9b59b6;
+  border-left: 4px solid #9b59b6;
+  padding-left: 1rem;
+}
+
+article p {
+  color: #34495e;
+  line-height: 1.8;
+}
+
+/* === Custom Feature Box === */
+.feature-box {
+  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin: 1.5rem 0;
+  border: 2px solid #ff6b6b;
+  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.2);
+}
+
+.feature-box h4 {
+  color: #c0392b;
+  margin-bottom: 0.5rem;
+}
+
+/* === Tweet Card Styling === */
+.tweet-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin: 1rem 0;
+  border: 1px solid #e1e8ed;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.tweet-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.tweet-card h3 {
+  color: #1da1f2;
+  margin-bottom: 0.5rem;
+}
+
+.tweet-date {
+  color: #657786;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+/* === Sidebar Customization === */
+.sidebar-content {
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-content h3 {
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.sidebar-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-content li {
+  margin: 0.5rem 0;
+}
+
+.sidebar-content a {
+  color: #2980b9;
+  text-decoration: none;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.sidebar-content a:hover {
+  background-color: rgba(52, 152, 219, 0.1);
+  color: #1a5276;
+}
+
+/* === Stat Box Styling === */
+.stat-box {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.stat-box p {
+  margin: 0.5rem 0;
+  color: #2c3e50;
+}
+
+.stat-box strong {
+  color: #e74c3c;
+}
+
+/* === Footer Customization === */
+footer {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+footer a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+footer a:hover {
+  color: #1abc9c;
+  text-decoration: underline;
+}
+
+/* === Image Styling === */
+img {
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  max-width: 100%;
+}
+
+img:hover {
+  transform: scale(1.02);
+}
+
+/* === Responsive Design (Keep this from previous assignment) === */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  article,
+  aside {
+    flex: 1;
+    width: 100%;
+  }
+
+  header ul {
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+}
+
+/* Body flexbox layout (Keep from previous assignments) */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+}
+
+article {
+  flex: 2;
+  overflow-y: auto;
+}
+
+aside {
+  flex: 1;
+  overflow-y: auto;
+}
