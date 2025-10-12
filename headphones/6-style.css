@@ -97,7 +97,6 @@ header a:hover {
   margin-bottom: 10px;
 }
 
-/* OUR RESULTS */
 /* 6-styles.css — CSS for "Our results" with pure CSS pentagons */
 
 /* Basic reset and variables */
@@ -328,7 +327,6 @@ body {
     font-size: 0.9rem;
   }
 }
-
 /* CONTACT US */
 #contact {
   background-color: #000;
